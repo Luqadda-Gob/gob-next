@@ -1,11 +1,20 @@
 import type { Metadata } from "next";
-import { Download, Monitor, Terminal } from "lucide-react";
+import {
+  BookOpen,
+  Download,
+  GraduationCap,
+  Monitor,
+  Play,
+  Smartphone,
+  Terminal,
+} from "lucide-react";
+import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { Footer, Header } from "../site-chrome";
 
 export const metadata: Metadata = {
   title: "Lasoo Degis",
-  description: "Soo degso Gob CLI ee Windows, macOS, ama Linux.",
+  description: "Hel Gob Mobile ama lasoo deg Gob CLI ee Windows.",
 };
 
 const platforms = [
@@ -28,12 +37,51 @@ export default function DownloadsPage() {
     <>
       <Header />
       <main className="legal-page">
-        <span className="kicker">Gob CLI</span>
-        <h1>Gob kulasoo Deg Kombiyuutarkaaga</h1>
+        <span className="kicker">Gob Mobile iyo Gob CLI</span>
+        <h1>Laba hab oo aad Gob ku bilaabi karto.</h1>
         <p className="lead">
-          Windows release-ka koowaad waa diyaar. Linux weli waa la diyaarinayaa,
-          waxaana lagu dari doonaa GitHub Releases marka uu diyaar noqdo.
+          App-ka Gob wuxuu ku barayaa programming-ka Af-Soomaali. Gob CLI-na
+          wuxuu kuu oggolaanayaa inaad barnaamijyadaada ku qorto
+          kombiyuutarkaaga.
         </p>
+
+        <section className="mobile-download-promo">
+          <div className="mobile-download-copy">
+            <span className="product-label">
+              <Smartphone size={17} /> Gob Mobile
+            </span>
+            <h2>Programming-ka gacantaada ku baro.</h2>
+            <p>
+              Casharro nidaamsan, tijaabooyin, progress tracking, iyo Playground
+              aad code-ka Gob ku tijaabiso.
+            </p>
+            <div className="mobile-download-actions">
+              <span className="status-pill">
+                <Play size={14} /> Android · Soo socda
+              </span>
+              <Link className="text-link" href="/#mobile">
+                Wax badan ka ogow <BookOpen size={16} />
+              </Link>
+            </div>
+          </div>
+          <div className="mobile-download-mark">
+            <GraduationCap size={46} />
+            <strong>Baro afkaaga.</strong>
+            <span>Ku dhis Gob.</span>
+          </div>
+        </section>
+
+        <section className="cli-download-section">
+          <span className="product-label">
+            <Terminal size={17} /> Gob CLI
+          </span>
+          <h2>Gob kulasoo deg kombiyuutarkaaga.</h2>
+          <p>
+            Windows release-ka koowaad waa diyaar. Linux weli waa la
+            diyaarinayaa, waxaana lagu dari doonaa GitHub Releases marka uu
+            diyaar noqdo.
+          </p>
+        </section>
 
         <div className="download-list">
           {platforms.map(({ name, detail, icon: Icon, downloadUrl, checksum }) => (

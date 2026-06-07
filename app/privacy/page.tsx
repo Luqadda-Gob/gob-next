@@ -42,8 +42,8 @@ export default function PrivacyPage() {
 
         <h2>Xakamaynta xogtaada</h2>
         <p>
-          Waxaad codsan kartaa sixidda ama tirtiridda akoonkaaga iyo xogta la
-          xiriirta adigoo adeegsanaya bogga tirtiridda akoonka.
+          Waxaad sixi kartaa macluumaadkaaga ama tirtiri kartaa akoonkaaga iyo
+          xogta la xiriirta adigoo adeegsanaya app-ka Gob.
         </p>
       </main>
       <Footer />

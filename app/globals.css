@@ -475,6 +475,10 @@ h3,
   gap: 8px;
 }
 
+.app-download-link {
+  margin-top: 22px;
+}
+
 .release-section {
   align-items: center;
   border-top: 1px solid var(--line);
@@ -567,6 +571,87 @@ h3,
 .download-list {
   border-top: 1px solid var(--line);
   margin-top: 45px;
+}
+
+.mobile-download-promo {
+  align-items: stretch;
+  background: var(--brown);
+  color: var(--white);
+  display: grid;
+  grid-template-columns: 1fr 210px;
+  margin: 48px 0 74px;
+}
+
+.mobile-download-copy {
+  padding: 34px;
+}
+
+.product-label {
+  align-items: center;
+  color: var(--gold);
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 800;
+  gap: 7px;
+  text-transform: uppercase;
+}
+
+.mobile-download-promo h2 {
+  color: var(--white);
+  font-family: "Montserrat Gob", sans-serif;
+  font-size: 27px;
+  font-weight: 900;
+  margin: 18px 0 10px;
+}
+
+.mobile-download-promo p {
+  color: #ddcbb8;
+  margin-bottom: 24px;
+}
+
+.mobile-download-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.mobile-download-actions .status-pill {
+  align-items: center;
+  display: inline-flex;
+  gap: 6px;
+}
+
+.mobile-download-mark {
+  align-items: center;
+  background: var(--gold);
+  color: var(--brown);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 28px;
+  text-align: center;
+}
+
+.mobile-download-mark strong {
+  font-family: "Montserrat Gob", sans-serif;
+  font-size: 18px;
+  margin-top: 14px;
+}
+
+.mobile-download-mark span {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.cli-download-section {
+  max-width: 680px;
+}
+
+.cli-download-section h2 {
+  font-family: "Montserrat Gob", sans-serif;
+  font-size: 28px;
+  margin: 16px 0 10px;
 }
 
 .download-item {
@@ -994,6 +1079,20 @@ h3,
   .download-item .status-pill {
     grid-column: 2;
     width: fit-content;
+  }
+
+  .mobile-download-promo {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-download-copy {
+    padding: 27px 22px;
+  }
+
+  .mobile-download-mark {
+    align-items: flex-start;
+    min-height: 150px;
+    text-align: left;
   }
 
   .docs-layout {

@@ -1,11 +1,11 @@
 import Link from "next/link";
 import {
   ArrowRight,
-  BookOpen,
   Download,
   GraduationCap,
   Laptop,
   Play,
+  Smartphone,
   Terminal,
 } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
@@ -33,11 +33,11 @@ export default function Home() {
               kombiyuutarkaaga, kana qayb qaado horumarintiisa.
             </p>
             <div className="hero-actions">
-              <Link className="button button-gold" href="/downloads">
-                <Download size={18} /> Soo degso Gob
+              <Link className="button button-gold" href="/#mobile">
+                <Smartphone size={18} /> Eeg Gob Mobile
               </Link>
-              <Link className="button button-quiet" href="/docs">
-                <BookOpen size={18} /> Akhri hagaha
+              <Link className="button button-quiet" href="/downloads">
+                <Download size={18} /> Lasoo Deg Gob CLI
               </Link>
               <a
                 className="icon-button"
@@ -129,8 +129,8 @@ export default function Home() {
             <span className="kicker">Luuqadda Gob</span>
             <h2>Fikraddaada si cad u qor.</h2>
             <p>
-              Ereyada Gob waxay ka soo baxaan Af-Soomaaliga: si aad maskaxdaada
-              ugu hayso dhibaatada aad xallinayso, ma aha turjumaadda syntax-ka.
+              Gob wuxuu kuu oggolaanayaa inaad xoogga saarto xalinta dhibaatada,
+              adigoon ku mashquulin erayo qalaad.
             </p>
             <Link className="text-link light-link" href="/docs">
               Bilow hagaha <ArrowRight size={17} />
@@ -180,8 +180,8 @@ export default function Home() {
             <span className="kicker">Gob Mobile</span>
             <h2>Fahamka ka hor syntax-ka.</h2>
             <p>
-              App-ka Gob wuxuu kuu dhigaa programming-ka Af-Soomaali, isagoo
-              kuu kaydinaya halka aad marayso iyo casharrada aad dhammaysay.
+              App-ka Gob wuxuu ku dhigaa programming-ka Af-Soomaali, isagoo
+              ku kaydinaya halka aad marayso iyo casharrada aad dhammaysay.
             </p>
             <ul className="check-list">
               <li>Casharro nidaamsan oo Af-Soomaali ah</li>
@@ -191,6 +191,9 @@ export default function Home() {
             <span className="availability">
               <Play size={17} /> Android release-ka ugu horreeya wuu soo socdaa
             </span>
+            <Link className="text-link app-download-link" href="/downloads">
+              Eeg Lasoo Degista <ArrowRight size={17} />
+            </Link>
           </div>
         </section>
 

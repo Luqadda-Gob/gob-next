@@ -10,6 +10,7 @@ export function Header() {
         <span>Gob</span>
       </Link>
       <nav aria-label="Main navigation">
+        <Link href="/#mobile">App-ka</Link>
         <Link href="/docs">Hage</Link>
         <Link href="/downloads">Lasoo Degis</Link>
         <Link href="/support">Caawimaad</Link>
@@ -40,11 +41,11 @@ export function Footer() {
         <p>Programming ku hadlaya Af-Soomaali.</p>
       </div>
       <div className="footer-links">
+        <Link href="/#mobile">App-ka</Link>
         <Link href="/docs">Hage</Link>
         <Link href="/downloads">Lasoo Degis</Link>
         <Link href="/support">Caawimaad</Link>
-        <Link href="/privacy">Asturnaanta</Link>
-        <Link href="/account-deletion">Tirtir akoonka</Link>
+        <Link href="/privacy">Siyaasada Asturnaanta</Link>
       </div>
       <p className="copyright">© 2026 Gob</p>
     </footer>
