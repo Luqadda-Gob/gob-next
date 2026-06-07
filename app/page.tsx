@@ -185,8 +185,8 @@ export default function Home() {
             </p>
             <ul className="check-list">
               <li>Casharro nidaamsan oo Af-Soomaali ah</li>
-              <li>Progress-kaaga oo meel walba kula socda</li>
-              <li>Playground aad fikradaha ku tijaabiso</li>
+              <li>Horumarkaaga oo meel walba kula socda</li>
+              <li>Goobta Tijaabinta oo aad fikradaha ku tijaabiso</li>
             </ul>
             <span className="availability">
               <Play size={17} /> Android release-ka ugu horreeya wuu soo socdaa

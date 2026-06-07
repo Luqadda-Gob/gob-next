@@ -52,8 +52,8 @@ export default function DownloadsPage() {
             </span>
             <h2>Programming-ka gacantaada ku baro.</h2>
             <p>
-              Casharro nidaamsan, tijaabooyin, progress tracking, iyo Playground
-              aad code-ka Gob ku tijaabiso.
+              Casharro nidaamsan, tijaabooyin, la socodka horumarkaaga, iyo
+              Goobta Tijaabinta oo aad code-ka Gob ku tijaabiso.
             </p>
             <div className="mobile-download-actions">
               <span className="status-pill">

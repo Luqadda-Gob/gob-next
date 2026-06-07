@@ -60,7 +60,7 @@ function Code({
         data.result || "Code-ku wuu dhammaaday, wax natiijo ahna ma soo saarin.",
       );
     } catch {
-      setError("Playground-ka lama xiriiri karo. Mar kale isku day.");
+      setError("Goobta Tijaabinta lama xiriiri karo. Mar kale isku day.");
     } finally {
       setRunning(false);
     }

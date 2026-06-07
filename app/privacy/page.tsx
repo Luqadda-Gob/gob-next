@@ -29,7 +29,7 @@ export default function PrivacyPage() {
 
         <h2>Sida xogta loo isticmaalo</h2>
         <p>
-          Xogta waxaa loo isticmaalaa xaqiijinta akoonka, kaydinta progress-ka,
+          Xogta waxaa loo isticmaalaa xaqiijinta akoonka, kaydinta horumarkaaga,
           hagaajinta adeegga, iyo ka jawaabidda codsiyada caawimaadda. Gob ma
           iibiyo xogta isticmaalayaasha.
         </p>
