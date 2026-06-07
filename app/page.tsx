@@ -200,7 +200,7 @@ export default function Home() {
             <span className="kicker">Bilow maanta</span>
             <h2>Gob kulasoo Deg Kombiyuutarkaaga</h2>
             <p>
-              Dooro nidaamkaaga, lasoo deg Gob, kadib qor barnaamijkaaga koowaad.
+              Dooro nidaamka kuugu Jira, lasoo deg Gob, kadib qor barnaamijkaaga koowaad.
             </p>
           </div>
           <Link className="button button-dark" href="/downloads">
