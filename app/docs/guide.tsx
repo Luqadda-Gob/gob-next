@@ -7,7 +7,8 @@ import {
   LoaderCircle,
   Play,
 } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import Editor from "../tools/highlight/Editor";
 
 const topics = [
   { id: "hordhac", label: "Hordhac", group: "Bilow" },
@@ -38,7 +39,6 @@ function Code({
   const [output, setOutput] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [running, setRunning] = useState(false);
-  const editorRows = Math.min(24, Math.max(7, code.split("\n").length + 1));
 
   async function runCode() {
     setRunning(true);
@@ -85,13 +85,8 @@ function Code({
             {running ? "Waa socdaa" : "Socodsii"}
           </button>
         </div>
-        <textarea
-          aria-label="Gob code"
-          onChange={(event) => setCode(event.target.value)}
-          rows={editorRows}
-          spellCheck={false}
-          value={code}
-        />
+        {/* Editor */}
+        <Editor setCode={setCode} code={code} />
         {(output !== null || error !== null) && (
           <div className={`code-output ${error ? "error" : ""}`}>
             <strong>{error ? "Khalad" : "Natiijo"}</strong>
